@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Case 4</title>
+</head>
+<body>
+  <h2>User Registration Form</h2>
+  <form action="saveuser.php" method="post">   
+      <input type="text" id="userid" name="userid" required><br>
+      <input type="password" id="password" name="password" required><br>
+      <input type="radio" id="male" name="gender" value="male" required> Male
+      <input type="radio" id="female" name="gender" value="female"> Female<br>
+      <select id="usertype" name="usertype" required>
+        <option value="">--Select--</option>
+        <option value="student">Student</option>
+        <option value="teacher">Teacher</option>
+        <option value="admin">Admin</option>
+        <option value="superadmin">Super Admin</option>
+      </select>
+      <br>
+      <textarea class="terms-box" readonly>
+1. Users must provide accurate information.
+2. The account should not be shared.
+3. Admins can revoke access at any time.
+4. Follow community guidelines strictly.
+5. Changes to T&C may happen without notice.
+      </textarea><br>
+      <input type="checkbox" id="agree" name="agree"> Agree with terms and conditions<br>
+      <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
